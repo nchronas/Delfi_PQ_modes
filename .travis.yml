@@ -9,6 +9,7 @@ matrix:
 
 before_install:
   - sudo apt-get install --assume-yes --quiet gcc-multilib
+  - git clone -b paths https://github.com/nchronas/ecss_services.git
 install:
   - gem install rspec
   - gem install rubocop
