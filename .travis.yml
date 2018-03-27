@@ -1,0 +1,17 @@
+language: c
+
+
+matrix:
+ include:
+    - os: linux
+      dist: trusty
+      compiler: gcc
+
+before_install:
+  - sudo apt-get install --assume-yes --quiet gcc-multilib
+install:
+  - gem install rspec
+  - gem install rubocop
+  - gem install ceedling
+script:
+  - ceedling test:all
