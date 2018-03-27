@@ -15,4 +15,6 @@ install:
   - gem install rubocop
   - gem install ceedling
 script:
+  - ls
+  - ls ../
   - ceedling test:all
