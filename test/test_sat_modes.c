@@ -11,5 +11,6 @@ void tearDown(void)
 
 void test_sat_modes_NeedToImplement(void)
 {
+    TEST_FILE("satellite.c");
     TEST_IGNORE_MESSAGE("Need to Implement sat_modes");
 }
